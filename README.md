@@ -17,6 +17,7 @@ Lade dir aus den Releases die Datei "windows_setup.ps1" herunter und führe sie 
 Das Setup lädt nun die Programmdateien herunter und kopiert diese in den ensprechenden Order (C:\scripts\ohg_auto_login).
 Hier kannst du nun die Dateien ausführen, wenn du sie brauchst.
 Beachte: Es wird eine Python 3 Installation zur Ausführung des Skriptes benötigt!
+Vergiss nicht deine Login Daten im Installationsordner in der Datei "config.json" einzutragen, damit das Skript funktioniert!
 
 #### MacOS
 Aktuell nicht unterstützt
