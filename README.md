@@ -3,9 +3,20 @@
 Dieses kleine Programm soll den WLAN Zugang im Otto-Hahn-Gymnasium Göttingen erleichtern.
 Es wird alle 30 ein Ping zu den Google Servern gesendet. Schlägt dieser fehl, wird der Authentifizierungsprozess automatisch aufgerufen. Die maximale Zeit ohne Internet beträgt also 30 Sekunden.
 
-## Wie es funktioniert
-Zum Ausführen des Skriptes muss Python 3 installiert sein (getestet auf Python 3.11). Die eigenen Login Daten müssen in der config.json eingetragen werden. Um das Skript zu starten, muss die ohg-script-daemon.py per Doppelklick gestartet werden. Das Skript bleibt im Hintergrund aktiv, es öffnet sich kein Fenster.
-Falls der WiFi Login nicht funktioniert, kann die "ohg-authenticator.log" für Informationen geöffnet werden. Hier stehen eventuelle Fehlermeldungen
+## Installation
+
+#### Linux
+Lade dir aus den Releases die Datei "linux_setup.sh" herunter. Gehe in den entsprechenden Ordner und öffne ein Terminal. 
+Nun musst du folgenden Befehl eingeben: "sudo ./linux_setup.sh". Das Setup Skript erledigt nun den Rest. Stelle bitte sicher,
+dass du bei der Installation eine Internetverbindung hast! Ohne Internet kann das Setup die benötigten Dateien nicht laden und die Installation schlägt fehl.
+
+Vergiss nicht, mit "sudo nano /etc/ohg_auto_login/config.json" deine Benutzerdaten in die Programmkonfiguration einzugeben!
+
+#### Windows
+Noch nicht unterstützt. Lade dir die Quelldateien runter, un das Skript zu benutzen. Du benötigst eine Installation von Python 3 oder höher!
+
+#### MacOS
+Aktuell nicht unterstützt
 
 ## DISCLAIMER
 Das Skript ist experimentell, es gibt keine Garantie für die Funktionsfähigkeit!
