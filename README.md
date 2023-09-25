@@ -13,7 +13,10 @@ dass du bei der Installation eine Internetverbindung hast! Ohne Internet kann da
 Vergiss nicht, mit "sudo nano /etc/ohg_auto_login/config.json" deine Benutzerdaten in die Programmkonfiguration einzugeben!
 
 #### Windows
-Noch nicht unterstützt. Lade dir die Quelldateien runter, un das Skript zu benutzen. Du benötigst eine Installation von Python 3 oder höher!
+Lade dir aus den Releases die Datei "windows_setup.ps1" herunter und führe sie mit Administratorrechten aus.
+Das Setup lädt nun die Programmdateien herunter und kopiert diese in den ensprechenden Order (C:\scripts\ohg_auto_login).
+Hier kannst du nun die Dateien ausführen, wenn du sie brauchst.
+Beachte: Es wird eine Python 3 Installation zur Ausführung des Skriptes benötigt!
 
 #### MacOS
 Aktuell nicht unterstützt
