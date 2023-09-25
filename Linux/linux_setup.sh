@@ -7,7 +7,7 @@ apt-get install git python3
 
 git clone "https://github.com/Miquest/ohg_auto_login.git"
 
-mv "ohg_auto_login"  "/etc"
+mv "ohg_auto_login/Linux"  "/etc/ohg_auto_login"
 
 echo "Copied the scripts to '/etc/ohg_auto_login'"
 echo "Please insert your credentials to 'config.json' in the application folder"
