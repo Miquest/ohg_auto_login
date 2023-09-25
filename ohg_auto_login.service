@@ -1,0 +1,10 @@
+[Unit]
+Description=Automated WIFI Login for OHG Goettingen
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/etc/ohg_auto_login/ohg-script-daemon.pyw
+
+[Install]
+WantedBy=multi-user.target
