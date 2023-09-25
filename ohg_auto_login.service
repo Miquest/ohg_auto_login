@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/etc/ohg_auto_login/ohg-script-daemon.pyw
+ExecStart=/usr/bin/python3 /etc/ohg_auto_login/ohg-script-daemon.pyw
 
 [Install]
 WantedBy=multi-user.target
