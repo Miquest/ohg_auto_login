@@ -39,4 +39,6 @@ if (Test-Path $savePath) {
     Write-Host "Download fehlgeschlagen."
 }
 
+Remove-Item -Path "ohg_login_windows" -Recurse
+Remove-Item -Path $savePath
 Write-Host "Programm wurde in 'C:\scripts\ohg_auto_login' installiert. Zum Starten, bitte die Datei 'ohg-script-daemon.pyw' ausführen!"
