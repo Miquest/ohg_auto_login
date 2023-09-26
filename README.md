@@ -1,7 +1,7 @@
 # Automatischer WIFI Login
 
 Dieses kleine Programm soll den WLAN Zugang im Otto-Hahn-Gymnasium Göttingen erleichtern.
-Es wird alle 30 ein Ping zu den Google Servern gesendet. Schlägt dieser fehl, wird der Authentifizierungsprozess automatisch aufgerufen. Die maximale Zeit ohne Internet beträgt also 30 Sekunden.
+Es wird alle 30 Sekunden ein Ping zu den Google Servern gesendet. Schlägt dieser fehl, wird der Authentifizierungsprozess automatisch aufgerufen. Die maximale Zeit ohne Internet beträgt also 30 Sekunden.
 
 ## Installation
 
@@ -13,10 +13,11 @@ dass du bei der Installation eine Internetverbindung hast! Ohne Internet kann da
 Vergiss nicht, mit "sudo nano /etc/ohg_auto_login/config.json" deine Benutzerdaten in die Programmkonfiguration einzugeben!
 
 #### Windows
-Lade dir aus den Releases die Datei "windows_setup.ps1" herunter und führe sie mit Administratorrechten aus.
+Lade dir aus den Releases die Datei "windows_setup.ps1" herunter. Im download Ordner musst du nun eine Powershell öffnen und mit dem Befehl "./windows_setup.ps1" das Skript ausführen.
 Das Setup lädt nun die Programmdateien herunter und kopiert diese in den ensprechenden Order (C:\scripts\ohg_auto_login).
 Hier kannst du nun die Dateien ausführen, wenn du sie brauchst.
 Beachte: Es wird eine Python 3 Installation zur Ausführung des Skriptes benötigt!
+Vergiss nicht deine Login Daten im Installationsordner in der Datei "config.json" einzutragen, damit das Skript funktioniert!
 
 #### MacOS
 Aktuell nicht unterstützt
