@@ -13,16 +13,17 @@ dass du bei der Installation eine Internetverbindung hast! Ohne Internet kann da
 Vergiss nicht, mit "sudo nano /etc/ohg_auto_login/config.json" deine Benutzerdaten in die Programmkonfiguration einzugeben!
 
 #### Windows
-Lade dir aus den Releases die Datei "windows_setup.ps1" herunter. Im download Ordner musst du nun eine Powershell öffnen und mit dem Befehl "./windows_setup.ps1" das Skript ausführen.
-Das Setup lädt nun die Programmdateien herunter und kopiert diese in den ensprechenden Order (C:\scripts\ohg_auto_login).
-Hier kannst du nun die Dateien ausführen, wenn du sie brauchst.
-Beachte: Es wird eine Python 3 Installation zur Ausführung des Skriptes benötigt!
-Vergiss nicht deine Login Daten im Installationsordner in der Datei "config.json" einzutragen, damit das Skript funktioniert!
+Lade dir aus den Releases die Datei "windows_installer.bat" herunter. Führe diese Datei nun mit Administratorrechten
+aus. Die Programmdateien werden jetzt heruntergeladen und installiert. Es wird auch eine Startup Verknüpfung erstellt, die
+das Programm beim Systemstart direkt mit startet.
+Installiert wird in den Ordner "C:\scripts\ohg_auto_login". 
+Hier kannst du nun die Dateie manuell ausführen, wenn du sie brauchst.
+Vergiss nicht deine Login Daten im Installationsordner in der Datei "config.json" einzutragen, damit das Programm funktioniert!
 
 #### MacOS
 Aktuell nicht unterstützt
 
 ## DISCLAIMER
 Das Skript ist experimentell, es gibt keine Garantie für die Funktionsfähigkeit!
-Neuere Versionen werden ein Installer Skript beinhalten, welches den Einrichtungsprozess automatisiert und einen Task (bei Windows) oder einen Crontab (Linux) erstellt, damit das Skript ab Systemstart ausgeführt wird. 
-Außerdem wird die Abhängigkeit einer Python Installation unter Windows entfernt werden.
+Es kann unter Linux und Windows zu Fehlern kommen, wenn du nicht genau so vorgehst wie in der Anleitung beschrieben!
+Bei Fehlern, melde gerne einen Issue auf der Github Issue Seite!
