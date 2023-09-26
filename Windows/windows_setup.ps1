@@ -24,7 +24,7 @@ if (Test-Path $savePath) {
         if (Test-Path $installDirectory){
             Write-Debug "Installationsordner wurde erstellt! Verschiebe die Dateien in installationsordner..."
 
-            Copy-Item -Path "ohg_login_windows/ohg_auto_login-main/Windows/*" -Destination $installDirectory -Recurse
+            Copy-Item -Path "ohg_login_windows/ohg_auto_login-main/Windows/Package/*" -Destination $installDirectory -Recurse
             # Remove installation Script from installation folder
             Remove-Item -Path "C:\scripts\ohg_auto_login\windows_setup.ps1"
 
