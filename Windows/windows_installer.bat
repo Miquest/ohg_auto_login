@@ -45,6 +45,7 @@ if exist "%savePath%" (
             
             :: Kopieren der Verknüpfung zum Programm in den Startup-Ordner
 	    xcopy /s /e /i "%installDirectory%\ohg_auto_login_startup.lnk" "%HOMEDRIVE%%HOMEPATH%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\"
+		rmdir /s /q "%HOMEDRIVE%%HOMEPATH%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\_internal"
 
         ) else (
             echo Erstellen des Installationsverzeichnisses fehlgeschlagen!
