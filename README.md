@@ -18,7 +18,9 @@ aus. Die Programmdateien werden jetzt heruntergeladen und installiert. Es wird a
 das Programm beim Systemstart direkt mit startet.
 Installiert wird in den Ordner "C:\scripts\ohg_auto_login". 
 Hier kannst du nun die Dateie manuell ausführen, wenn du sie brauchst.
-Vergiss nicht deine Login Daten im Installationsordner in der Datei "config.json" einzutragen, damit das Programm funktioniert!
+
+Zur Konfiguration und Deinstallation des Programmes wurde die Verknüpfung "OHG Einstellungen" in das Startmenü platziert. Hier kannst du
+deine Login Informationen abändern, sowie das Skript komplett deinstallieren!
 
 #### MacOS
 Aktuell nicht unterstützt
