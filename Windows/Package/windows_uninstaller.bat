@@ -8,6 +8,7 @@
 
 echo "Deinstalliere ohg_auto_login und alle seine Komponenten..."
 del "%HOMEDRIVE%%HOMEPATH%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\ohg_auto_login_startup.lnk"
+del "%HOMEDRIVE%%HOMEPATH%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\OHG Login\OHG Login Einstellungen.lnk"
 
 echo Deinstallation erfolgreich! Enter zum beenden!
 pause

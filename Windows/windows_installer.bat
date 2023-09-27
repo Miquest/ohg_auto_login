@@ -47,7 +47,7 @@ if exist "%savePath%" (
 	    xcopy /s /e /i "%installDirectory%\ohg_auto_login_startup.lnk" "%HOMEDRIVE%%HOMEPATH%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\"
         
         mkdir "%HOMEDRIVE%%HOMEPATH%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\OHG Login"
-		xcopy /s /e /i "%installDirectory%\ohg_auto_login_startup.lnk" "%HOMEDRIVE%%HOMEPATH%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\OHG Login\"
+		xcopy /s /e /i "%installDirectory%\OHG Login Einstellungen.lnk" "%HOMEDRIVE%%HOMEPATH%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\OHG Login\"
         rmdir /s /q "%HOMEDRIVE%%HOMEPATH%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\_internal"
 
         ) else (
@@ -68,5 +68,7 @@ echo Das Programm wurde in 'C:\scripts\ohg_auto_login' installiert und zur autom
 echo Zum Starten, bitte das Programm "login-script-daemon.exe" im Installationsverzeichnis ("C:\scripts\ohg_auto_login") ausfuehren.
 echo Vergiss nicht, die config.json im Installationsverzeichnis zu bearbeiten, damit die Login Prozedur ablaeuft wie gewuenscht.
 echo Bei Fehlern, schau dir die .log Datei im Installationsverzeichnis an.
-echo Drücke die Enter-Taste, um fortzufahren.
+echo Drücke die Enter-Taste, um deine Login Daten zu konfigurieren!
 pause
+./"C:\scripts\ohg_auto_login\windows_actions.exe"
+
