@@ -28,6 +28,8 @@ async def pinger():
                 id = ohg_login.OHGautoIdenifier()
                 id.read_config()
                 id.authorize()
+            except Exception as e:
+                logging.error(e)
         else:
             logging.info("Not connected to OHG Wifi. Not executing the authentication process!")
         

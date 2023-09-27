@@ -15,7 +15,6 @@ async def pinger():
     output = output.split('\n')
     ssid = output[9].split(":")[1].strip()
 
-    print(ssid)
     while True:
         if ssid == "ohg":
             try:
@@ -25,6 +24,9 @@ async def pinger():
             except ConnectionError:
                 logging.warning("Connection to the internet lost!")
                 logging.info("Executing ohg_login.py to ensure internet connection!")
+            except Exception as e:
+                logging.error(e)
+
 
                 # Execute the ohg_login script!
                 id = ohg_login.OHGautoIdenifier()
