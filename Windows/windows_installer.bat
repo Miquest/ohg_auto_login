@@ -68,7 +68,7 @@ echo Das Programm wurde in 'C:\scripts\ohg_auto_login' installiert und zur autom
 echo Zum Starten, bitte das Programm "login-script-daemon.exe" im Installationsverzeichnis ("C:\scripts\ohg_auto_login") ausfuehren.
 echo Vergiss nicht, die config.json im Installationsverzeichnis zu bearbeiten, damit die Login Prozedur ablaeuft wie gewuenscht.
 echo Bei Fehlern, schau dir die .log Datei im Installationsverzeichnis an.
-echo Drücke die Enter-Taste, um deine Login Daten zu konfigurieren!
+echo Denk daran, deine Login Daten mit dem Programm "OHG Einstellungen" im Startmenü zu bearbeiten!
+echo Enter zum beenden...
 pause
-./"C:\scripts\ohg_auto_login\windows_actions.exe"
 
