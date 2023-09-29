@@ -33,7 +33,7 @@ class OHGautoIdenifier():
 
         url = "https://10.80.0.1/api/captiveportal/access/logon/0/"
         
-       try:
+        try:
             request = requests.post(url, post_data, verify=False)
             response = json.loads(request.text)
 
