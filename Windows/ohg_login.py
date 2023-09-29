@@ -33,17 +33,14 @@ class OHGautoIdenifier():
 
         url = "https://10.80.0.1/api/captiveportal/access/logon/0/"
         
-       
-        request = requests.post(url, post_data, verify=False)
-        response = json.loads(request.text)
+       try:
+            request = requests.post(url, post_data, verify=False)
+            response = json.loads(request.text)
 
-        if response["clientState"] == "NOT_AUTHORIZED":
-            logging.error("Authentication failed by ohg_login.py")
+            if response["clientState"] == "NOT_AUTHORIZED":
+                logging.error("Authentication failed by ohg_login.py")
 
-        if response["clientState"] == "AUTHORIZED":
-            logging.info("Authentication was successful!")       
-
-
-id = OHGautoIdenifier()
-id.read_config()
-id.authorize()
+            if response["clientState"] == "AUTHORIZED":
+                logging.info("Authentication was successful!")      
+        except Exception as e:
+            logging.error(e) 
