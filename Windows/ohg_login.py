@@ -44,10 +44,3 @@ class OHGautoIdenifier():
                 logging.info("Authentication was successful!")      
         except Exception as e:
             logging.error(e) 
-
-
-id = OHGautoIdenifier()
-id.read_config()
-id.authorize()
-
-input()
