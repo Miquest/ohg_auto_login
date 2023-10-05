@@ -3,7 +3,9 @@ echo "Starting initiating the setup process for the program"
 
 echo "Installing dependencies"
 
-apt-get install git python3
+# Install dependencies!
+apt-get install git python3 python3-pip
+python3 -m pip install requests
 
 git clone "https://github.com/Miquest/ohg_auto_login.git"
 
