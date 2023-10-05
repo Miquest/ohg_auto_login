@@ -4,7 +4,8 @@
 echo "Starting initiating the setup process for the program"
 echo "Adding Debian repositories to apst sources.list..."
 echo "deb http://deb.debian.org/debian/ buster main contrib non-free" >> /etc/apt/sources.list
-apt updateecho "Das Debian-Paket-Repository wurde erfolgreich zur sources.list hinzugefügt und anschließend entfernt. Die Paketlisten wurden aktualisiert."
+apt update
+echo "Das Debian-Paket-Repository wurde erfolgreich zur sources.list hinzugefügt und anschließend entfernt. Die Paketlisten wurden aktualisiert."
 echo "Installing dependencies"
 # Install dependencies!
 apt-get install git python3 python3-pip
