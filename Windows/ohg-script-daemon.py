@@ -16,7 +16,7 @@ async def pinger():
     ssid = output[9].split(":")[1].strip()
 
     while True:
-        if ssid == "WLAN-334396":
+        if ssid == "ohg":
             try:
                 test_url = "https://www.google.com"
                 requests.get(test_url)
