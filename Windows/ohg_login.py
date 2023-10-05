@@ -25,6 +25,7 @@ class OHGautoIdenifier():
 
     def authorize(self):
 
+        print("Executing OHG Script")
         logging.info("Starting authentication process!")
         post_data = {
             "user": self.username,

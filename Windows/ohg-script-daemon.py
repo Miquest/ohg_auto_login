@@ -16,22 +16,25 @@ async def pinger():
     ssid = output[9].split(":")[1].strip()
 
     while True:
-        if ssid == "ohg":
+        if ssid == "WLAN-334396":
             try:
                 test_url = "https://www.google.com"
                 requests.get(test_url)
                 logging.info("Connection to the internet is stable!")
+                raise ConnectionError
             except ConnectionError:
+                print("Connection Lost")
                 logging.warning("Connection to the internet lost!")
                 logging.info("Executing ohg_login.py to ensure internet connection!")
-            except Exception as e:
-                logging.error(e)
-
 
                 # Execute the ohg_login script!
                 id = ohg_login.OHGautoIdenifier()
                 id.read_config()
                 id.authorize()
+
+            except Exception as e:
+                logging.error(e)
+
         else:
             logging.info("Not connected to OHG Wifi. Not executing the authentication process!")
         
