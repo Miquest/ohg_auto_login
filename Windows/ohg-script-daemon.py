@@ -21,7 +21,6 @@ async def pinger():
                 test_url = "https://www.google.com"
                 requests.get(test_url)
                 logging.info("Connection to the internet is stable!")
-                raise ConnectionError
             except ConnectionError:
                 print("Connection Lost")
                 logging.warning("Connection to the internet lost!")
