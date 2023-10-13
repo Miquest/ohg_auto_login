@@ -26,6 +26,6 @@ mv "/etc/ohg_auto_login/ohg_auto_login.service" "/etc/systemd/system"
 # Enable systemd unit!
 systemctl enable ohg_auto_login.service
 systemctl start ohg_auto_login.service
-systemctl start ohg_auto_login.service
+systemctl status ohg_auto_login.service
 
 echo "Setup process done! Enjoy my script. Don't forget to configure the credentials!"
