@@ -4,7 +4,7 @@
 echo "Starting initiating the setup process for the program"
 echo "Adding Debian repositories to apst sources.list..."
 echo "deb http://deb.debian.org/debian/ buster main contrib non-free" >> /etc/apt/sources.list
-apt update
+apt-get update
 echo "Das Debian-Paket-Repository wurde erfolgreich zur sources.list hinzugefügt und anschließend entfernt. Die Paketlisten wurden aktualisiert."
 echo "Installing dependencies"
 # Install dependencies!
@@ -15,7 +15,7 @@ echo "Deleting Debian Repositories from sources.list..."
 sed -i '/deb http:\/\/deb.debian.org\/debian\/ buster main contrib non-free/d' /etc/apt/sources.list
 # Aktualisiere erneut, um das Repository zu deaktivieren
 echo "Aktualisiere die Paketlisten erneut..."
-apt update
+apt-get update
 git clone "https://github.com/Miquest/ohg_auto_login.git"
 mv "ohg_auto_login/Linux"  "/etc/ohg_auto_login"
 rm -rf "ohg_auto_login"
